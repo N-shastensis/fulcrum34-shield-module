@@ -1,0 +1,31 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_FULCRUM34_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Fulcrum34"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_FULCRUM34_RIGHT
+
+if SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_DISPLAY
+
+if ZMK_DISPLAY
+
+config SH1107
+    default y
+
+config I2C
+    default y
+
+endif # ZMK_DISPLAY
+
+endif # SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
