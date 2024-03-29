@@ -71,11 +71,11 @@ RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)  RC(4,6) RC(4,7) RC(4,8) RC(4,9) RC(4,10
 			;
 	};
 
-};
-
 vbatt: vbatt {
         compatible = "zmk,battery-nrf-vddh";
     };
+	
+};
 
 &feather_i2c {
     status = "okay";
