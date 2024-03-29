@@ -59,7 +59,7 @@
             quick-tap-ms = <0>;
 			require-prior-idle-ms = <20>;
             flavor = "balanced";
-            bindings = <&semex &kp KP_COMMA>;
+            bindings = <&semex &kp>;
 		};
 		chtm: codot_holdtap_mod {
             compatible = "zmk,behavior-hold-tap";
@@ -68,7 +68,7 @@
             quick-tap-ms = <0>;
 			require-prior-idle-ms = <20>;
             flavor = "balanced";
-            bindings = <&codot &kp KP_DOT>;
+            bindings = <&codot &kp>;
 		};
 		semex: semex {
             compatible = "zmk,behavior-mod-morph";
@@ -168,7 +168,7 @@
    &kp V &kp G &kp H &kp P &htm BSLH KP_LPAR   &htm FSLH KP_RPAR &kp SQT &kp Q &kp F &kp J    
    &hrml LGUI R &hrml LALT S &hrml LSHFT N &hrml LCTRL T &kp M   &kp MINUS &hrmr RCTRL A &hrmr RSHFT E &hrmr RALT C &hrmr RGUI I 
    &kp K &kp B &kp L &kp D &kp X   &kp Z &kp U &kp O &kp W &kp Y 
-                     &shtm &chtm   &kp RET &htm TAB SPACE
+                     &shtm 0 KP_COMMA &chtm 0 KP_DOT  &kp RET &htm TAB SPACE
    &mo 2 &kp BSPC &caps CAPS 0 &mo 5 &kp DEL    &kp BSPC &mo 4 &kp ESC &kp DEL &mo 1
 												&bt BT_PRV &out OUT_TOG &bt BT_NXT 
                         >;
