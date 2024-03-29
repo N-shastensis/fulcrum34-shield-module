@@ -9,19 +9,17 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-/*
-config ZMK_DISPLAY
-
-if ZMK_DISPLAY
-
-config SH1106
-    default y
-
-config I2C
-    default y
-
-endif # ZMK_DISPLAY
-*/
+# config ZMK_DISPLAY
+#
+# if ZMK_DISPLAY
+#
+# config SH1106
+#     default y
+#
+# config I2C
+#     default y
+#
+# endif # ZMK_DISPLAY
 
 endif # SHIELD_FULCRUM34_RIGHT
 
