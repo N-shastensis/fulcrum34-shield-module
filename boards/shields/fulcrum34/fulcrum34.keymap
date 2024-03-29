@@ -30,7 +30,7 @@
             hold-trigger-key-positions = <5 6 7 8 9>, <15 16 17 18 19>, <25 26 27 28 29>, <30 31 32 33>, <34 35 36 37 38 39 40 41 42 43>;
 			hold-trigger-on-release;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp &kp>;
         };
         hrmr: balanced_homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
@@ -41,7 +41,7 @@
             hold-trigger-key-positions = <0 1 2 3 4>, <10 11 12 13 14>, <20 21 22 23 24>, <30 31 32 33>, <34 35 36 37 38 39 40 41 42 43>;
 			hold-trigger-on-release;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp &kp>;
         };
         htm: holdtap_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -50,7 +50,7 @@
             quick-tap-ms = <0>;
 			require-prior-idle-ms = <20>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp &kp>;
         };
 		shtm: semex_holdtap_mod {
             compatible = "zmk,behavior-hold-tap";
@@ -59,7 +59,7 @@
             quick-tap-ms = <0>;
 			require-prior-idle-ms = <20>;
             flavor = "balanced";
-            bindings = <&semex>, <&kp KP_COMMA>;
+            bindings = <&semex &kp KP_COMMA>;
 		};
 		chtm: codot_holdtap_mod {
             compatible = "zmk,behavior-hold-tap";
@@ -68,18 +68,18 @@
             quick-tap-ms = <0>;
 			require-prior-idle-ms = <20>;
             flavor = "balanced";
-            bindings = <&codot>, <&kp KP_DOT>;
+            bindings = <&codot &kp KP_DOT>;
 		};
 		semex: semi_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&kp EXCL>;
+            bindings = <&kp SEMI &kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 		codot: colon_dot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp QMARK>;
+            bindings = <&kp COLON &kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         zhtm: zero_holdtap_mod {
@@ -89,7 +89,7 @@
             quick-tap-ms = <0>;
 			require-prior-idle-ms = <20>;
             flavor = "balanced";
-            bindings = <&zerok>, <&kp N0>;
+            bindings = <&zerok &kp N0>;
 		};
 		caps: holdtap_capsword {
 			compatible = "zmk,behavior-hold-tap";
@@ -98,7 +98,7 @@
 			quick-tap-ms = <0>;
 			require-prior-idle-ms = <20>;
 			flavor = "balanced";
-			bindings = <&kp>, <&caps_word>;
+			bindings = <&kp &caps_word>;
 		};
 		caps_word: caps_word {
 			compatible = "zmk,behavior-caps-word";
@@ -108,13 +108,13 @@
 		mma: mod_morph_a {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&kp LS(A)>;
+            bindings = <&kp A &kp LS(A)>;
             mods = <(MOD_LSFT)>;
         };
 		mmt: mod_morph_t {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp T>, <&kp RS(T)>;
+            bindings = <&kp T &kp RS(T)>;
             mods = <(MOD_RSFT)>;
         };
     };
