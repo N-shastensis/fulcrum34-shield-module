@@ -100,7 +100,9 @@
 			flavor = "balanced";
 			bindings = <&kp>, <&caps_word>;
 		};
-		&caps_word {
+		caps_word: caps_word {
+			compatible = "zmk,behavior-caps-word";
+			#binding-cells = <0>;
 			continue-list = <UNDERSCORE MINUS>;
 		};
 		mma: mod_morph_a {
