@@ -16,11 +16,9 @@
         ;
 };
 
-/*
 &kscan2 {
-	col-offset = <5>;
+//	col-offset = <5>;
 };
-*/
 
 &default_transform {
     col-offset = <5>;
