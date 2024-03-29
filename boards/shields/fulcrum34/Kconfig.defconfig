@@ -13,7 +13,7 @@ config ZMK_DISPLAY
 
 if ZMK_DISPLAY
 
-config SH1107
+config SH1106
     default y
 
 config I2C
