@@ -97,7 +97,7 @@
 			tapping-term-ms = <120>;
 			quick-tap-ms = <0>;
 			require-prior-idle-ms = <20>;
-			flavor = "balanced:;
+			flavor = "balanced";
 			bindings = <&kp>, <&caps_word>;
 		};
 		&caps_word {
