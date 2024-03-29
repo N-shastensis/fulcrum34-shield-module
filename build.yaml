@@ -16,3 +16,9 @@
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
 #
+---
+include:
+  - board: adafruit_feather_nrf52840
+    shield: fulcrum34_left
+  - board: adafruit_feather_nrf52840
+    shield: fulcrum34_right
