@@ -70,13 +70,13 @@
             flavor = "balanced";
             bindings = <&codot &kp KP_DOT>;
 		};
-		semex: semi_excl {
+		semex: semex {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SEMI &kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-		codot: colon_dot {
+		codot: codot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COLON &kp QMARK>;
