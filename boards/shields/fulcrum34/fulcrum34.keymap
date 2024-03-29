@@ -121,11 +121,11 @@
 	
     combos {
         compatible = "zmk,combos";
-		combo_symbol_layer [
+		combo_symbol_layer {
             key-positions = <34 43>;
             bindings = <&mo 3>;
         };
-		combo_special_layer [
+		combo_special_layer {
             key-positions = <37 40>;
             bindings = <&mo 6>;
         };
