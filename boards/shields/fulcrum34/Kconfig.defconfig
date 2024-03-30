@@ -9,6 +9,18 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+	default y
+	
+config ZMK_USB_BOOT
+	default y
+	
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+	default y
+	
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+	default y
+
 # config ZMK_DISPLAY
 #
 # if ZMK_DISPLAY
@@ -28,4 +40,7 @@ if SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
 config ZMK_SPLIT
     default y
 
+config BUILD_OUTPUT_HEX
+	default y
+	
 endif # SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
