@@ -40,7 +40,7 @@ if SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
 config ZMK_SPLIT
     default y
 
-config BUILD_OUTPUT_HEX
-	default y
+#config BUILD_OUTPUT_HEX
+#	default y
 	
 endif # SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
