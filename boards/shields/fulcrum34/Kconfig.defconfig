@@ -40,7 +40,49 @@ if SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
 config ZMK_SPLIT
     default y
 
-#config BUILD_OUTPUT_HEX
+config BUILD_OUTPUT_UF2
+	default y
+
+#config BUILD_OUTPUT_UF2_FAMILY_ID
+#	string "0xada52840"
+
+#config BOARD_REVISION
+#	string "revD"
+
+config MPU_ALLOW_FLASH_WRITE
+	default y
+
+config NVS
+	default y
+
+config SETTINGS_NVS
+	default y
+
+config FLASH
+	default y
+
+config FLASH_PAGE_LAYOUT
+	default y
+
+config FLASH_MAP
+	default y
+
+config ZMK_BLE
+	default y
+
+config ZMK_BLE_EXPERIMENTAL_FEATURES	
+	default y
+
+config BT_CTLR_TX_PWR_PLUS_8
+	default y
+
+config ZMK_HID_REPORT_TYPE_NKRO
+	default y
+
+config ZMK_MOUSE
+	default y
+
+#config ZMK_WPM
 #	default y
-	
+
 endif # SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
