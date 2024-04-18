@@ -8,12 +8,6 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
-config ZMK_USB
-	default y
-	
-config ZMK_USB_BOOT
-	default y
 	
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
 	default y
@@ -79,17 +73,11 @@ config ZMK_BLE_EXPERIMENTAL_FEATURES
 config ZMK_MOUSE
 	default y
 
-#config ZMK_USB_LOGGING
-#	default y
-
-#config SERIAL
-#	default y
-
-#config DT_HAS_ZEPHYR_CDC_ACM_UART_ENABLED
-#	default y
-
-#config USB_DEVICE_STACK
-#	default y
+config ZMK_USB
+	default y
+	
+config ZMK_USB_BOOT
+	default y
 
 #config BT_CTLR_TX_PWR_PLUS_8
 #	default y
