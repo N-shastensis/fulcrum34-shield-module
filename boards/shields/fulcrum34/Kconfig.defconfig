@@ -79,6 +79,9 @@ config ZMK_BLE_EXPERIMENTAL_FEATURES
 config ZMK_MOUSE
 	default y
 
+config ZMK_USB_LOGGING
+	default y
+
 #config BT_CTLR_TX_PWR_PLUS_8
 #	default y
 
