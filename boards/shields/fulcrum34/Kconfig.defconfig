@@ -15,24 +15,6 @@ config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
 	default y
 
-#config ZMK_USB
-#	default y
-	
-#config ZMK_USB_BOOT
-#	default y
-
-# config ZMK_DISPLAY
-#
-# if ZMK_DISPLAY
-#
-# config SH1106
-#     default y
-#
-# config I2C
-#     default y
-#
-# endif # ZMK_DISPLAY
-
 endif # SHIELD_FULCRUM34_RIGHT
 
 if SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
@@ -46,20 +28,11 @@ config BUILD_OUTPUT_HEX
 #config BUILD_OUTPUT_UF2
 #	default y
 
-#config BUILD_OUTPUT_UF2_FAMILY_ID
-#	string "0xada52840"
-
-#config BOARD_REVISION
-#	string "revD"
-
 config MPU_ALLOW_FLASH_WRITE
 	default y
 
 config NVS
 	default y
-
-#config SETTINGS_NVS
-#	default y
 
 config FLASH
 	default y
@@ -78,14 +51,5 @@ config ZMK_BLE_EXPERIMENTAL_FEATURES
 
 config ZMK_MOUSE
 	default y
-
-#config BT_CTLR_TX_PWR_PLUS_8
-#	default y
-
-#config ZMK_HID_REPORT_TYPE_NKRO
-#	default y
-
-#config ZMK_WPM
-#	default y
 
 endif # SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT

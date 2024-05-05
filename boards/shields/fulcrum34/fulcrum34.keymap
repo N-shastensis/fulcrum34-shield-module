@@ -133,7 +133,7 @@
             timeout-ms = <40>;
             key-positions = <17 16>;
 			layers = <0>;
-			require-prior-idle-ms = <20>;
+			require-prior-idle-ms = <0>;
             bindings = <&macro_tap &mma &kp N &kp D>;
         };
         combo_the {
@@ -163,14 +163,12 @@
 // |   K  |   B  |   L  |   D  |   X  ||     ||   Z  |   U  |   O  |   W  |   Y  |
 //                      |htSEC |htCQD ||     ||  RET | htTS |
 // |  L2  | BSPC |  CW  |  L5  |  DEL ||     || BSPC |  L4  |  ESC |  DEL |  L1  |
-//											 || BTPRV|OUTTOG| BTNXT|
                         bindings = <
    &kp V &kp G &kp H &kp P &htm BSLH KP_LPAR   &htm FSLH KP_RPAR &kp SQT &kp Q &kp F &kp J    
    &hrml LGUI R &hrml LALT S &hrml LSHFT N &hrml LCTRL T &kp M   &kp MINUS &hrmr RCTRL A &hrmr RSHFT E &hrmr RALT C &hrmr RGUI I 
    &kp K &kp B &kp L &kp D &kp X   &kp Z &kp U &kp O &kp W &kp Y 
                      &shtm 0 KP_COMMA &chtm 0 KP_DOT  &kp RET &htm TAB SPACE
-   &mo 2 &kp BSPC &caps CAPS 0 &mo 5 &kp DEL    &kp BSPC &mo 4 &kp ESC &kp DEL &mo 1
-												&bt BT_PRV &out OUT_TOG &bt BT_NXT 
+   &mo 2 &kp BSPC &caps CAPS 0 &mo 5 &kp DEL    &kp BSPC &mo 4 &kp ESC &kp DEL &mo 1 
                         >;
                 };
                 number_layer {
@@ -180,14 +178,12 @@
 // |   `  |   %  |   $  |   |  |   #  ||     || htDC |   1  |   2  |   3  |  RET |
 //                      |      |      ||     ||      |      |
 // |      |      |      |      |      ||     ||      |      |      |      |      |
-//											 ||      |      |      |
                         bindings = <
    &kp TILDE &kp AT &kp LT &kp LBRC &kp LBKT   &trans &kp N7 &kp N8 &kp N9 &htm TAB SPACE
    &kp CARET &kp PLUS &kp STAR &kp AMPS &kp EQUAL   &trans &kp N4 &kp N5 &kp N6 &zhtm 0 N0
    &kp GRAVE &kp PRCNT &kp DLLR &kp PIPE &kp HASH   &htm KP_DOT KP_COMMA &kp N1 &kp N2 &kp N3 &kp RET
                      &trans &trans   &trans &trans
    &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-												&trans &trans &trans 
                         >;
                 };
                 navigation_layer {
@@ -197,14 +193,12 @@
 // | PSCR | HOME |  PS  | END  | NLCK ||     ||   #  |   |  |   $  |   %  |   `  |
 //                      |      |      ||     ||      |      |
 // |      |      |      |      |      ||     ||      |      |      |      |      |
-//											 ||      |      |      |
                         bindings = <
    &kp INS &kp PG_UP &kp UP &kp PG_DN &trans   &kp RBKT &kp RBRC &kp GT &kp AT &kp TILDE
    &kp SLCK &kp LEFT &kp DOWN &kp RIGHT &kp K_APP   &kp EQUAL &kp AMPS &kp STAR &kp PLUS &kp CARET
    &kp PSCRN &kp HOME &kp PAUSE_BREAK &kp END &kp KP_NUM    &kp HASH &kp PIPE &kp DLLR &kp PRCNT &kp GRAVE
                      &trans &trans   &trans &trans
    &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-												&trans &trans &trans 
                         >;
                 };
                 symbol_layer {
@@ -214,14 +208,12 @@
 // |   `  |   %  |   $  |   |  |   #  ||     ||   #  |   |  |   $  |   %  |   `  |
 //                      |      |      ||     ||      |      |
 // |      |      |      |      |      ||     ||      |      |      |      |      |
-//											 ||      |      |      |
                         bindings = <
    &kp TILDE &kp AT &kp LT &kp LBRC &kp LBKT   &kp RBKT &kp RBRC &kp GT &kp AT &kp TILDE
    &kp CARET &kp PLUS &kp STAR &kp AMPS &kp EQUAL   &kp EQUAL &kp AMPS &kp STAR &kp PLUS &kp CARET
    &kp GRAVE &kp PRCNT &kp DLLR &kp PIPE &kp HASH   &kp HASH &kp PIPE &kp DLLR &kp PRCNT &kp GRAVE
                      &trans &trans   &trans &trans
    &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-												&trans &trans &trans 
                         >;
                 };
                 function_layer {
@@ -231,14 +223,12 @@
 // |      |      |      |      |      ||     ||      |  F1  |  F2  |  F3  |  F10 |
 //                      |      |      ||     ||      |      |
 // |      |      |      |      |      ||     ||      |      |      |      |      |
-//											 ||      |      |      |
                         bindings = <
    &none &none &none &none &none   &none &kp F7 &kp F8 &kp F9 &kp F12
    &none &none &none &none &none   &none &kp F4 &kp F5 &kp F6 &kp F11
    &none &none &none &none &none   &none &kp F1 &kp F2 &kp F3 &kp F10
                      &trans &trans   &trans &trans
    &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-												&trans &trans &trans 
                         >;
                 };
                 mouse_layer {
@@ -248,14 +238,12 @@
 // |      |      |      |      |      ||     ||      |      |      |      |      |
 //                      |      |      ||     ||      |      |
 // |      |      |      |      |      ||     ||      |      |      |      |      |
-//											 ||      |      |      |
                         bindings = <
    &none &none &none &none &none   &none &mkp MB4 &none &mkp MB5 &none
    &none &none &none &none &none   &none &mkp LCLK &mkp MCLK &mkp RCLK &none
    &none &none &none &none &none   &none &none &none &none &none
                      &trans &trans   &trans &trans
    &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-												&trans &trans &trans 
                         >;
                 };
                 special_layer {
@@ -265,14 +253,12 @@
 // |      |      |      |      |      ||     ||      |      |      |      |      |
 //                      |      |      ||     ||      |      |
 // |      |      |      |      |      ||     ||      |      |      |      |      |
-//											 ||      |      |      |
                         bindings = <
    &none &none &none &none &none   &none &none &none &none &none
    &none &none &none &none &none   &none &none &none &none &none
    &none &none &none &none &none   &none &none &none &none &none
                      &trans &trans   &trans &trans
-   &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-												&trans &trans &trans 
+   &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans 
                         >;
                 };
         };
