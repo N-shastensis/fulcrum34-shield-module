@@ -22,11 +22,11 @@ if SHIELD_FULCRUM34_LEFT || SHIELD_FULCRUM34_RIGHT
 config ZMK_SPLIT
     default y
 
-config BUILD_OUTPUT_HEX
-	default y
-
-#config BUILD_OUTPUT_UF2
+#config BUILD_OUTPUT_HEX
 #	default y
+
+config BUILD_OUTPUT_UF2
+	default y
 
 config MPU_ALLOW_FLASH_WRITE
 	default y
